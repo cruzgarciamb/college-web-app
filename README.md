@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# First steps
+## setup libraries
+```shell
+ng new college-web-app
+ng serve --o
+
+npm i uikit
+ng add @angular/material
+npm install rxjs
+```
+
+## crete components
+1. run ng g c
+```shell
+ng g c components/alumnos/alumnos --flat --skip-tests
+```
+2. add path to the app.routes.ts file
+3. add <router-outlet> to the app.component.html
