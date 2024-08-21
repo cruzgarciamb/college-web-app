@@ -33,9 +33,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng new college-web-app
 ng serve --o
 
-npm i uikit
+# npm i uikit
 ng add @angular/material
 npm install rxjs
+npm i awesome-notifications
 ```
 
 ## crete components
@@ -45,3 +46,8 @@ ng g c components/alumnos/alumnos --flat --skip-tests
 ```
 2. add path to the app.routes.ts file
 3. add <router-outlet> to the app.component.html
+4. Create models, services, components, list, actions, forms
+```shell
+ng g class models/Generic --skip-tests
+ng g service services/Common --skip-tests
+```

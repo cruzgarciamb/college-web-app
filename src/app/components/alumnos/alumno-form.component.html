@@ -1,0 +1,23 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Nombre:</mat-label>
+        <input matInput placeholder="Nombre" [ngModel]="model?.nombre" name="nombre">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Apellido:</mat-label>
+        <input matInput placeholder="Apellido" [ngModel]="model?.apellido" name="apellido">
+    </mat-form-field>
+
+    <div class="file-upload">
+        <div class="example-button-container">
+            <a mat-fab extended routerLink="." (click)="fileUpload.click()">
+                <mat-icon>attach_file</mat-icon>
+                Choose file
+            </a>
+        </div>
+        <section md-no-float>
+            <input id="fileInput"  class="ng-hide" ng-model="fileName" type="file" placeholder="No file chosen" 
+            ng-readonly="true" (change)="seleccionarFoto($event)" #fileUpload style="visibility: hidden;">
+        </section>
+    </div>
+</form>
